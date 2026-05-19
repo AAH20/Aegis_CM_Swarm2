@@ -1,0 +1,23 @@
+{
+    "name": "Aegis Swarm Enterprise Environment",
+    "image": "mcr.microsoft.com/devcontainers/universal:2",
+    "features": {
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-azuretools.vscode-docker",
+                "ms-python.python"
+            ]
+        }
+    },
+    "forwardPorts": [8000],
+    "portsAttributes": {
+        "8000": {
+            "label": "A2Z SOC Dashboard",
+            "onAutoForward": "openPreview"
+        }
+    },
+    "postCreateCommand": "echo 'Welcome to Aegis Swarm! Type `make up` to begin the simulation.' && docker compose build"
+}

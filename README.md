@@ -1,5 +1,8 @@
 # Aegis_CM_Swarm
 
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/AAH20/Aegis_CM_Swarm2)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/AAH20/Aegis_CM_Swarm2)
+
 Aegis_CM_Swarm is a safe, Dockerized multi-service demo scaffold for orchestrating a small agent swarm with raw Vertex AI SDK patterns.
 
 It is designed to show the shape of an agentic system without shipping offensive logic or intentionally vulnerable components. The repository includes:
