@@ -2,6 +2,7 @@
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/AAH20/Aegis_CM_Swarm2)
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/AAH20/Aegis_CM_Swarm2)
+[![CI](https://github.com/AAH20/Aegis_CM_Swarm2/actions/workflows/ci.yml/badge.svg)](https://github.com/AAH20/Aegis_CM_Swarm2/actions/workflows/ci.yml)
 
 Aegis_CM_Swarm is a safe, Dockerized multi-service demo scaffold for orchestrating a small agent swarm with raw Vertex AI SDK patterns.
 
@@ -82,6 +83,12 @@ Add these metrics or screenshots to make the project even more compelling:
 - number of services launched automatically
 - a screenshot of the dashboard fully loaded in the browser
 - a short clip showing the GitLab incident creation path
+
+## Validation and trust
+
+The repository now includes a GitHub Actions workflow that installs dependencies and compiles the Python sources on every push and pull request.
+
+That gives reviewers a fast confidence signal that the repo is maintained like a real product and that the code path is continuously checked before changes land.
 
 ## Repository layout
 
