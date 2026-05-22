@@ -102,6 +102,36 @@ The most natural commercial model is a platform subscription with usage-based ex
 
 Additional revenue can come from premium connectors, managed onboarding, and custom workflow packs for vertical use cases.
 
+## Why now
+
+The timing is strong because the market is already shifting toward agentic automation, but most teams still struggle with three blockers:
+
+- demo environments are fragile and slow to reproduce
+- agent workflows are hard to trust without auditability and guardrails
+- enterprise buyers want security, observability, and deployment control before adoption
+
+This project addresses all three by giving teams a controlled, browser-friendly environment that is easy to validate and easy to explain.
+
+## Traction signals
+
+You can frame the current state of the repo as meaningful early traction:
+
+- a working multi-service stack with Docker, Compose, and VS Code tasks
+- a one-click cloud dev environment via Codespaces and Gitpod
+- a live GitLab execution path rather than a mocked-only integration
+- a CI workflow that checks Python sources on push and pull request
+- documentation that already supports both judges and future buyers
+
+## Use of funds
+
+If this were funded, the first dollars should go into product hardening and repeatability:
+
+1. add persistence, authentication, and audit trails
+2. build a lightweight admin UI for configuration and approvals
+3. expand integrations for Slack, Teams, Jira, ServiceNow, and PagerDuty
+4. package telemetry and ROI reporting for operators and executives
+5. add release automation, security scanning, and signed artifacts
+
 ## Roadmap
 
 If you wanted to turn this into a fundable product, the next steps would be:
