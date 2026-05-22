@@ -14,6 +14,33 @@ It is designed to show the shape of an agentic system without shipping offensive
 - a live GitLab API execution bridge for real incident creation
 - a local demo entrypoint for quick verification
 
+## Why this is investable
+
+This project is more than a demo because it shows the platform qualities buyers expect from a modern DevSecOps and automation product:
+
+- a frictionless developer environment that boots in Docker, Codespaces, or Gitpod
+- a clear control plane for orchestration, telemetry, and tool execution
+- safe defaults with offline fallback behavior for repeatable demos
+- an execution bridge pattern that can connect to real enterprise systems
+- a presentation-ready workflow that proves both engineering depth and operator value
+
+## Platform architecture
+
+```mermaid
+flowchart LR
+	U[Judge / Operator] --> R[README + One-click env]
+	R --> C[Codespaces or Gitpod]
+	C --> A[arena / FastAPI]
+	A --> B[blue_hive]
+	A --> D[red_hive]
+	A --> M[commander]
+	M --> V[Vertex AI wrapper]
+	M --> G[GitLab execution bridge]
+	M --> O[Observability + alerts]
+```
+
+The architecture is intentionally simple so it is easy to explain in a sales call, but it still demonstrates the core ingredients of a real platform: bootstrapping, control, policy, and operational feedback.
+
 ## Project goals
 
 This scaffold is built to demonstrate:
@@ -22,7 +49,39 @@ This scaffold is built to demonstrate:
 - simple containerized orchestration with Docker Compose
 - safe telemetry polling between services
 - a clean place to map external tool declarations
+- a one-click cloud development environment for reviewers and buyers
+- platform engineering and DevSecOps workflow signals
 - a demo-ready structure that is easy to explain in a presentation
+
+## Buyer value
+
+If you are pitching this to a buyer, frame it around outcomes:
+
+- reduce time to first demo from hours to minutes
+- standardize incident workflows across teams
+- keep agent-driven automation auditable and controlled
+- make cloud and local environments behave the same way
+- reduce setup friction that usually blocks adoption
+
+## Enterprise readiness
+
+The strongest enterprise signals in this repo are:
+
+- containerized services with predictable startup behavior
+- a hidden `.devcontainer` configuration for browser-based onboarding
+- a live execution bridge pattern that can be swapped for real integrations
+- structured offline fallback modes for resilience and repeatability
+- a clear place to add security gates, approvals, and logging
+
+## Suggested proof points
+
+Add these metrics or screenshots to make the project even more compelling:
+
+- time to boot in Codespaces
+- time to first meaningful alert
+- number of services launched automatically
+- a screenshot of the dashboard fully loaded in the browser
+- a short clip showing the GitLab incident creation path
 
 ## Repository layout
 
