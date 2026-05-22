@@ -6,6 +6,14 @@
 
 Aegis_CM_Swarm is a safe, Dockerized multi-service demo scaffold for orchestrating a small agent swarm with raw Vertex AI SDK patterns.
 
+## Executive summary
+
+Aegis Swarm is a one-click, containerized platform for demonstrating how modern DevSecOps teams can bootstrap, observe, and control agent-driven workflows without fragile setup or cloud dependency risk.
+
+It is designed to convert quickly from demo-ready infrastructure into a productizable control plane for orchestration, incident automation, and partner integrations.
+
+For buyers, the core value is simple: faster setup, clearer auditability, and a repeatable environment that behaves the same in a browser, on a laptop, or in a private cloud.
+
 It is designed to show the shape of an agentic system without shipping offensive logic or intentionally vulnerable components. The repository includes:
 
 - a FastAPI service that acts as the arena
@@ -63,6 +71,46 @@ If you are pitching this to a buyer, frame it around outcomes:
 - keep agent-driven automation auditable and controlled
 - make cloud and local environments behave the same way
 - reduce setup friction that usually blocks adoption
+
+## Market wedge
+
+The strongest entry point is the team that already feels the pain of manual setup and fragmented automation:
+
+- platform engineering teams that need a clean internal environment for demos and proofs of concept
+- DevSecOps and SecOps teams that want a controlled workflow for alerts and incident routing
+- technical founders or consulting teams that need a repeatable customer-facing environment
+
+That wedge is valuable because it is narrow enough to explain quickly, but broad enough to expand into a platform story over time.
+
+## Differentiation
+
+What makes this stand out from a typical agent demo is the combination of product and platform qualities:
+
+- one-click cloud dev environment support through Codespaces and Gitpod
+- explicit offline fallback so the system still works without cloud credentials
+- a live execution bridge pattern rather than a hard-coded mock-only workflow
+- clean separation between orchestration, UI, and partner integration layers
+- documentation that already tells a buyer how to run, validate, and trust the system
+
+## Business model
+
+The most natural commercial model is a platform subscription with usage-based expansion:
+
+- starter tier for demos, internal pilots, and small teams
+- team tier for shared workspaces, approvals, and integrations
+- enterprise tier for policy, audit logs, private deployment, and support
+
+Additional revenue can come from premium connectors, managed onboarding, and custom workflow packs for vertical use cases.
+
+## Roadmap
+
+If you wanted to turn this into a fundable product, the next steps would be:
+
+1. persist incident and workflow history so the product becomes operationally durable
+2. add role-based access, approvals, and policy enforcement around tool execution
+3. expose integration settings in a small admin UI instead of environment variables alone
+4. package analytics for time-to-detect, time-to-triage, and automation coverage
+5. add a release process with tagged versions, changelogs, and security scanning
 
 ## Enterprise readiness
 
